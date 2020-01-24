@@ -1,4 +1,7 @@
 {
+    "dealerdirect/phpcodesniffer-composer-installer": {
+        "version": "v0.5.0"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -13,6 +16,9 @@
     },
     "doctrine/cache": {
         "version": "1.10.0"
+    },
+    "doctrine/coding-standard": {
+        "version": "7.0.2"
     },
     "doctrine/collections": {
         "version": "1.6.4"
@@ -90,6 +96,9 @@
     "egulias/email-validator": {
         "version": "2.1.15"
     },
+    "gitonomy/gitlib": {
+        "version": "v1.2.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -117,6 +126,15 @@
     "phpdocumentor/type-resolver": {
         "version": "1.0.1"
     },
+    "phpro/grumphp": {
+        "version": "v0.17.2"
+    },
+    "phpstan/phpdoc-parser": {
+        "version": "0.4.2"
+    },
+    "phpstan/phpstan": {
+        "version": "0.12.7"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -129,6 +147,9 @@
     "psr/log": {
         "version": "1.1.2"
     },
+    "seld/jsonlint": {
+        "version": "1.7.2"
+    },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
         "recipe": {
@@ -139,6 +160,33 @@
         },
         "files": [
             "config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "slevomat/coding-standard": {
+        "version": "6.1.1"
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
+        },
+        "files": [
+            "phpcs.xml.dist"
+        ]
+    },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "410b9325a37ef86f1e47262c61738f6202202bca"
+        },
+        "files": [
+            "public/.htaccess"
         ]
     },
     "symfony/asset": {
@@ -488,8 +536,36 @@
             "config/routes/dev/web_profiler.yaml"
         ]
     },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.6",
+            "ref": "69e1d805ad95964088bd510c05995e87dc391564"
+        },
+        "files": [
+            "assets/css/app.css",
+            "assets/js/app.js",
+            "config/packages/assets.yaml",
+            "config/packages/prod/webpack_encore.yaml",
+            "config/packages/test/webpack_encore.yaml",
+            "config/packages/webpack_encore.yaml",
+            "package.json",
+            "webpack.config.js"
+        ]
+    },
     "symfony/yaml": {
         "version": "v4.4.3"
+    },
+    "thecodingmachine/phpstan-safe-rule": {
+        "version": "v1.0.0"
+    },
+    "thecodingmachine/phpstan-strict-rules": {
+        "version": "v0.12.0"
+    },
+    "thecodingmachine/safe": {
+        "version": "v1.0.3"
     },
     "twig/extra-bundle": {
         "version": "v3.0.1"
