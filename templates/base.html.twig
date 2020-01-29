@@ -14,13 +14,13 @@
 		{% endblock %}
 
 	</head>
-	<body>
+	<body id="page-top">
 		{{include('header.html.twig')}}
 		{% block body %}{% endblock %}
+		{{include('footer.html.twig')}}
 		{% block javascripts %}
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
-
 	</body>
 
 </html>
