@@ -15,3 +15,17 @@
     ```bash
     $ php bin/console doctrine:migration:migrate
     ```
+## Sélection d'un theme
+- Se positionner sur la branche correspondant au theme souhaité
+- Installer les dépendances JS et compiler les assets:
+    ```
+    $ yarn install
+    $ yarn dev
+
+## Démarrer un nouveau projet
+- Depuis la banche du theme sélectionné:
+    - Créer une nouvelle branche
+    - Merger les potentielles évolutions du CMS depuis Master
+
+
+
