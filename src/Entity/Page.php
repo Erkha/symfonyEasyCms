@@ -51,13 +51,9 @@ class Page
      */
     private $childs;
 
-    /** @var Slugger **/
-    private $slugger;
-
     public function __construct()
     {
         $this->childs = new ArrayCollection();
-        $this->slugger = new Slugger();
     }
 
     public function __toString(): string
@@ -78,7 +74,8 @@ class Page
     public function setTitle(string $title): self
     {
         $this->title = $title;
-        $this->slug = $this->slugger->slugify($title);
+        $slugger = new Slugger();
+        $this->slug = $slugger->slugify($title);
 
         return $this;
     }
