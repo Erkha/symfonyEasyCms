@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+@import "bootstrap.min.css";
+
+@import "custom.css";
+@import "flashy.min.css";
+@import "flaticon.css";
+@import "font-awesome.min.css";
+@import "magnific-popup.css";
+@import "owl.carousel.min.css";
+@import "pogo-slider.min.css";
+@import "responsive.css";
+@import "responsiveslides.css";
+@import "style.css";
+@import "timeline.css";
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+$primary: darken(white, 0%);
+
+body {
+  background-color: $primary;
+}
+
+

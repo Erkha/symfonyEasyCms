@@ -1,0 +1,11 @@
+easy_admin:
+    design:
+        form_theme: # Both themes are for ckeditor integration
+            - "@EasyAdmin/form/bootstrap_4.html.twig"
+    entities:
+        Page:
+            class: App\Entity\Page
+            form:
+                fields:
+                    - { property: 'title'}
+                    - { property: 'parent'}
