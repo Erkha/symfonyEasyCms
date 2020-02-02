@@ -8,10 +8,9 @@
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
     "regenerator-runtime": "^0.13.2",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.3.1",
     "ts-loader": "^5.3.0",
-    "typescript": "^3.7.5",
-    "webpack-notifier": "^1.6.0"
+    "typescript": "^3.7.5"
   },
   "license": "UNLICENSED",
   "private": true,
@@ -23,6 +22,8 @@
   },
   "dependencies": {
     "bootstrap.min.js": "^3.3.5",
-    "jquery.easing": "^1.4.1"
+    "jquery": "^3.4.1",
+    "jquery.easing": "^1.4.1",
+    "popper.js": "^1.16.1"
   }
 }
