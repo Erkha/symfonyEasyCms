@@ -3,7 +3,7 @@
       {{ encore_entry_link_tags('css/app') }}
     {% endblock %}
 {% block body %}
-  <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+  <body id="haut home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
   <!-- LOADER -->
   <!--
@@ -49,7 +49,7 @@
   <!-- Start Banner -->
   <div class="ulockd-home-slider">
     <div class="container-fluid">
-      <div class="row" id="haut">
+      <div class="row">
         <div class="pogoSlider" id="js-main-slider">
           <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(build/img/slider-01.jpg);">
             <div class="lbox-caption pogoSlider-slide-element">
@@ -719,14 +719,8 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
-  <!-- ALL JS FILES -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- ALL PLUGINS -->
-  <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+  <div><a id="cRetour" class="cInvisible" href="#haut"><i class="far fa-arrow-alt-circle-up fa-2x"></i></a></div>
   </body>
 {% endblock %}
 
