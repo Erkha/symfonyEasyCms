@@ -16,33 +16,7 @@
   <!-- END LOADER -->
 
 
-  <!-- Start top bar -->
-  <div class="main-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left-top">
-            <a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
-            <div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="wel-nots">
-            <p>Welcome to Our Health Lab!</p>
-          </div>
-          <div class="right-top">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End top bar -->
+
 
   <!-- Start header -->
   <header class="top-header">
@@ -68,13 +42,14 @@
         </div>
       </div>
     </nav>
+
   </header>
   <!-- End header -->
 
   <!-- Start Banner -->
   <div class="ulockd-home-slider">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" id="haut">
         <div class="pogoSlider" id="js-main-slider">
           <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(build/img/slider-01.jpg);">
             <div class="lbox-caption pogoSlider-slide-element">
@@ -751,7 +726,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- ALL PLUGINS -->
-
+  <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
   </body>
 {% endblock %}
 

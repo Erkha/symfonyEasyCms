@@ -6,18 +6,17 @@ require('popper.js');
 require('bootstrap');
 
 
-require('./custom.js');
-require('./contact-form-script.js');
-require('./form-validator.min.js');
-require('./images-loded.min.js');
-require('./isotope.min.js');
-require('./main.js');
-require('./owl.carousel.min.js');
-
-require('./responsiveslides.min.js');
-require('./slider-index.js');
-require('./smoothscroll.js');
-require('./TweenMax.min.js');
-
+import('./custom.js');
+import('./contact-form-script.js');
+import('./form-validator.min.js');
+import('./images-loded.min.js');
+import('./isotope.min.js');
+import('./main.js');
+import('./owl.carousel.min.js');
+import('./responsiveslides.min.js');
+import('./slider-index.js');
+import('./smoothscroll.js');
+import('./TweenMax.min.js');
+import('./scroll.js');
 
 
