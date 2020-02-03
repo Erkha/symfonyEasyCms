@@ -29,7 +29,8 @@
         "symfony/web-link": "4.4.*",
         "symfony/webpack-encore-bundle": "^1.7",
         "symfony/yaml": "4.4.*",
-        "thecodingmachine/safe": "^1.0"
+        "thecodingmachine/safe": "^1.0",
+        "vich/uploader-bundle": "^1.13"
     },
     "require-dev": {
         "doctrine/coding-standard": "^7.0",

@@ -9,3 +9,14 @@ easy_admin:
                 fields:
                     - { property: 'title'}
                     - { property: 'parent'}
+        Image:
+            class: App\Entity\Image
+            list:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.page_images%' }
+            show:
+                fields:
+                    - { property: 'image', type: 'image', base_path: '%app.path.page_images%' }
+            form:
+                fields:
+                    - { property: 'imageFile', type: 'vich_image' }
