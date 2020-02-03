@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="landing")
      */
     public function displayLandingPage(PageRepository $pageRepo): Response
     {

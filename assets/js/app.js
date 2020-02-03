@@ -3,6 +3,8 @@ import '../css/app.scss';
 const $ = require('jquery');
 require('jquery.easing');
 require('bootstrap');
+require('./contact_me.js');
+require('./jqBootstrapValidation.js');
 
 $(document).ready(function() {
     $('[data-toggle="popover"]').popover();

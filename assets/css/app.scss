@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 @import 'variables.scss';
-@import 'mixins.scss';
 @import 'navbar.scss';
 @import 'masthead.scss';
 @import 'buttons.scss';
 @import 'about.scss';
 @import 'projects.scss';
-@import 'signup.scss';
 @import 'contact.scss';
 @import "~bootstrap/scss/bootstrap";
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
@@ -44,5 +42,5 @@ a {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
