@@ -1,8 +1,10 @@
 import '../css/app.scss';
 
-const $ = require('jquery');
-require('bootstrap');
-
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-});
+require('./jquery-2.1.1.js')
+require('./bootstrap.min.js')
+require('./custom.js');
+require('./gmaps.js');
+require('./html5shiv.js');
+require('./modernizr.js');
+require('./respond.min.js');
+require('./smoothscroll.js')
