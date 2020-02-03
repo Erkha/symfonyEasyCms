@@ -34,6 +34,18 @@ class Content
      * */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Page", inversedBy="contents")
+     *
+     * @var Page
+     */
+    private $page;
+
+    public function __toString(): string
+    {
+        return $this->title;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,6 +71,18 @@ class Content
     public function setContent(?string $content): self
     {
         $this->content = $content;
+
+        return $this;
+    }
+
+    public function getPage(): ?Page
+    {
+        return $this->page;
+    }
+
+    public function setPage(?Page $page): self
+    {
+        $this->page = $page;
 
         return $this;
     }

@@ -10,6 +10,8 @@ easy_admin:
                 fields:
                     - { property: 'title'}
                     - { property: 'parent'}
+                    - { property: 'images'}
+                    - { property: 'contents'}
         Image:
             class: App\Entity\Image
             list:

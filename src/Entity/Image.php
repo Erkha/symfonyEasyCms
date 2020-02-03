@@ -45,6 +45,18 @@ class Image
      */
     private $updatedAt;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Page", inversedBy="images")
+     *
+     * @var Page
+     */
+    private $page;
+
+    public function __toString(): string
+    {
+        return $this->image;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -80,5 +92,17 @@ class Image
     public function getUpdatedAt(): ?SafeDateTime
     {
         return $this->updatedAt;
+    }
+
+    public function getPage(): ?Page
+    {
+        return $this->page;
+    }
+
+    public function setPage(?Page $page): self
+    {
+        $this->page = $page;
+
+        return $this;
     }
 }
