@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Entity\Page;
-use App\Repository\PageRepository;
+use App\Form\ContactType;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
@@ -15,23 +17,35 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="landing")
      */
-    public function displayLandingPage(PageRepository $pageRepo): Response
+    public function displayLandingPage(Request $request, MailerInterface $mailer): Response
     {
-        $mainPages=$pageRepo->findBy(['parent' => null]);
+        $form = $this->createForm(
+            ContactType::class,
+            null,
+            ['method' => Request::METHOD_POST]
+        );
+        $form->handleRequest($request);
 
-        return $this->render('home/landing.html.twig', ['mainPages' => $mainPages]);
-    }
+        if ($form->isSubmitted() && $form->isValid()) {
+            $data = $form->getData();
+            $email = new TemplatedEmail();
+            $email->from($_ENV['SERVER_MAIL'])
+                    ->to($_ENV['ADMIN_MAIL'])
+                    ->subject('nouveau contact AnimTheTime')
+                    ->htmlTemplate('home/contact.html.twig')
+                    ->context([
+                        'message'   => $data['message'],
+                        'name'      => $data['name'],
+                        'email'     => $data['email'],
+                        'phone'     => $data['phone'],
+                    ]);
+            $mailer->send($email);
 
-    /**
-     * @Route("page/{slug}", defaults={"slug"="home"}, name="main")
-     */
-    public function displayPage(PageRepository $pageRepo, Page $page): Response
-    {
-        $mainPages=$pageRepo->findBy(['parent' => null]);
+            $this->addFlash('success', 'votre message a bien été transmis');
 
-        return $this->render('home/dynamicPage.html.twig', [
-            'mainPages' => $mainPages,
-            'page'=>$page,
-        ]);
+            return $this->redirectToRoute('landing', ['_fragment' => 'contact']);
+        }
+
+        return $this->render('home/landing.html.twig', ['form' => $form->createView()]);
     }
 }
