@@ -36,7 +36,7 @@ class HomeController extends AbstractController
                     ->context([
                         'message'   => $data['message'],
                         'name'      => $data['name'],
-                        'email'     => $data['email'],
+                        'mail'     => $data['email'],
                         'phone'     => $data['phone'],
                     ]);
             $mailer->send($email);
