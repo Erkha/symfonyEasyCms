@@ -1,28 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav">
-    {% for page in mainPages %}
-      {% if page.childs is empty %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ path('main', {slug: page.slug}) }}">{{page.title}} <span class="sr-only">(current)</span></a>
-      </li>
-      {% else %}
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="{{page.title}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         {{page.title}}
-        </a>
-        <div class="dropdown-menu" aria-labelledby="{{page.title}}">
-        {% for child in page.childs %}
-          <a class="dropdown-item" href="{{ path('main', {slug: child.slug}) }}">{{child.title}}</a>
-        {% endfor %}
-        </div>
-      </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </div>
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	{% if mainpages is defined %}
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav">
+				{% for page in mainPages %}
+					{% if page.childs is empty %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ path('main', {slug: page.slug}) }}">{{page.title}}
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+					{% else %}
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="{{page.title}}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								{{page.title}}
+							</a>
+							<div class="dropdown-menu" aria-labelledby="{{page.title}}">
+								{% for child in page.childs %}
+									<a class="dropdown-item" href="{{ path('main', {slug: child.slug}) }}">{{child.title}}</a>
+								{% endfor %}
+							</div>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
 </nav>

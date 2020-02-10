@@ -1,4 +1,6 @@
 easy_admin:
+    user:
+        name_property_path: username
     design:
         form_theme: # Both themes are for ckeditor integration
             - "@EasyAdmin/form/bootstrap_4.html.twig"
@@ -30,3 +32,18 @@ easy_admin:
                     - { property: 'title'}
                     - { property: 'content', type: 'fos_ckeditor' }
                     - { property: 'page'}
+        User:
+            class: App\Entity\User
+            controller: App\Controller\AdminController
+            form:
+                fields:
+                    - { property: 'username'}
+                    - { property: 'plainPassword', type: 'password', type_options: { required: false }}
+                    -   property: 'roles'
+                        type: 'choice'
+                        type_options:
+                            mapped: true
+                            expanded: true
+                            multiple: true
+                            choices: { 'Conseiller': 'ROLE_USER', 'Administrateur': 'ROLE_ADMIN' }
+
