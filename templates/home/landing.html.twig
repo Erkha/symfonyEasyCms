@@ -4,205 +4,245 @@
 {% endblock %}
 
 {% block body %}
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
-	<!-- Header -->
-	<header class="masthead">
-		<div class="container d-flex h-100 align-items-center">
-			<div class="mx-auto text-center">
-				<h1 class="mx-auto my-0 text-uppercase">Anim'the Time</h1>
-				<h2 class="text-white-50 mx-auto mt-2 mb-5">Une plateforme créée par un musicien passionné de musique sous
-																								toute ses formes.</h2>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v5.0"></script>
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Anim'the Time</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Une plateforme créée par un musicien passionné de musique sous
+                                                                                                toute ses formes.</h2>
 
-				<a href="#about" class="btn btn-primary js-scroll-trigger">Découvrez l'univers</a>
-			</div>
-		</div>
-	</header>
+                <a href="#about" class="btn btn-primary js-scroll-trigger">Découvrez l'univers</a>
+            </div>
+        </div>
+    </header>
 
-	<!-- Projects Section -->
-	<section id="projects" class="projects-section bg-light">
-		<div
-			class="container">
-			<!-- Featured Project Row -->
-			<div id="about" class="row align-items-center no-gutters mb-4 mb-lg-5">
-				<div class="col-xl-4 col-lg-5">
-					<img class="img-fluid" src="build/img/sq.jpg" alt="">
-				</div>
-				<div class="col-xl-8 col-lg-7">
-					<div class="featured-text text-center text-lg-left mb-3 mb-lg-0">
-						<h4>Le musicien</h4>
-						<p class="text-black-50 mb-0">Stéphane Quenault, guitariste depuis l'âge 7 ans, bassiste et contrebassiste.</p>
-						<p class="text-black-50 mb-0">
-							Membre de nombreuses formations musicales dans des univers variés.
-						</p>
-						<p class="text-black-50 mb-0">
-							Je donne des cours de musique en association depuis 2011 dans le plateau mornantais et la vallée du Gier.</p>
-					</div>
-				</div>
-			</div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+        <div
+            class="container">
+            <!-- Featured Project Row -->
+            <div id="about" class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-4 col-lg-5">
+                    <img class="img-fluid" src="build/img/sq.jpg" alt="">
+                </div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="featured-text text-center text-lg-left mb-3 mb-lg-0">
+                        <h4>Le musicien</h4>
+                        <p class="text-black-50 mb-0">Stéphane Quenault, guitariste depuis l'âge 7 ans, bassiste et contrebassiste.</p>
+                        <p class="text-black-50 mb-0">
+                            A été Membre de nombreuses formations musicales dans des univers variés.
+                        </p>
+                        <p class="text-black-50 mb-0">
+                            Donne des cours de musique en association depuis 2011 sur le plateau mornantais et en privé sur la vallée du Gier.
+                            </p>
+                    </div>
+                </div>
+            </div>
 
-			<!-- Project One Row -->
-			<div class="row justify-content-center no-gutters mb-5 mb-lg-0 js-scroll-trigger" id="cours">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="build/img/guitariste.jpg" alt="">
-				</div>
-				<div class="col-lg-6">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="project-text w-100 my-auto text-center text-lg-left">
-								<h4 class="text-white">Cours de guitare et Basse en association musicale ou en privé</h4>
-								<p class="mb-0 text-white-50">
-									Pédagogie basée sur le partage en duo ou trio et avec théorie, des cours privés solo sont possibles.
-								</p>
-								<p class="mb-0 text-white-50">
-									Un réseau de musiciens pour apprendre d'autres instruments.
-								</p>
-								<hr class="d-none d-lg-block mb-0 ml-0">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0 js-scroll-trigger" id="cours">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="build/img/guitariste.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Cours de guitare et Basse</h4>
+                                <p class="mb-0 text-white-50">
+                                    Je vous propose des cours de guitare, basse avec théorie musicale en présentiel, visioconférence ou
+                                        en école de musique (association musicale de Mornant)
+                                </p>
+                                <div class="d-flex flex-row justify-content-around m-2">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                        tarifs
+                                    </button>
+                                    <a class="btn btn-primary btn-sm" href="build/img/conditions-generales.pdf">
+                                        Télécharger conditions
+                                    </a>
+                                </div>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
 
-			<!-- Project Two Row -->
-			<div class="row justify-content-center no-gutters js-scroll-trigger" id="entretien">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="build/img/guitares.jpg" alt="">
-				</div>
-				<div class="col-lg-6 order-lg-first">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="project-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">Conseil achat instrument et entretien</h4>
-								<p class="mb-0 text-white-50">Nous vous conseillons dans le choix de vos instruments.</p>
-								<p class="mb-0 text-white-50">Nous réglons et entretenons vos instruments.</p>
-								<hr class="d-none d-lg-block mb-0 mr-0">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters js-scroll-trigger" id="entretien">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="build/img/guitares.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Conseil achat instrument et entretien</h4>
+                                <p class="mb-0 text-white-50">Nous vous conseillons dans le choix de vos instruments.</p>
+                                <p class="mb-0 text-white-50">Nous réglons et entretenons vos instruments.</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<div class="row justify-content-center no-gutters mb-5 mb-lg-0 js-scroll-trigger" id="animation">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="build/img/party.jpg" alt="">
-				</div>
-				<div class="col-lg-6">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="project-text w-100 my-auto text-center text-lg-left">
-								<h4 class="text-white">Un DJ à votre écoute pour animer vos evenements</h4>
-								<p class="mb-0 text-white-50">
-									Structurer votre évènement, faire des annonces, glisser des interventions musicale ou autre.
-								</p>
-								<p class="mb-0 text-white-50">
-									Introduire dans votre évènement un morceau en live accompagné d’une guitare voir plus suivant le projet, ou une parodie pour créer la surprise.
-								</p>
-								<hr class="d-none d-lg-block mb-0 ml-0">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0 js-scroll-trigger" id="animation">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="build/img/party.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Un DJ à votre écoute pour animer vos evenements</h4>
+                                <p class="mb-0 text-white-50">
+                                    Structurer votre évènement, faire des annonces, glisser des interventions musicale ou autre.
+                                </p>
+                                <p class="mb-0 text-white-50">
+                                    Introduire dans votre évènement un morceau en live accompagné d’une guitare voir plus suivant le projet, ou une parodie pour créer la surprise.
+                                </p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<!-- Project Two Row -->
-			<div class="row justify-content-center no-gutters js-scroll-trigger" id="live">
-				<div class="col-lg-6">
-					<img class="img-fluid" src="build/img/jazz-band.jpg" alt="">
-				</div>
-				<div class="col-lg-6 order-lg-first">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="project-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">Musique en live</h4>
-								<p class="mb-0 text-white-50">Nous vous aidons à trouver une formation musicale pour le plus grand plaisir de vos oreilles et animer vos évènements</p>
-								<hr class="d-none d-lg-block mb-0 mr-0">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <!-- Project Two Row -->
+            <div class="row justify-content-center no-gutters js-scroll-trigger" id="live">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="build/img/jazz-band.jpg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Musique en live</h4>
+                                <p class="mb-0 text-white-50">Nous vous aidons à trouver une formation musicale pour le plus grand plaisir de vos oreilles et animer vos évènements</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-	</section>
+        </div>
+    </section>
 
-	<!-- Contact Section -->
-	<section class="contact-section bg-black">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 my-auto">
-					<div class="card py-2 mb-2">
-						<div class="card-body text-center">
-							<i class="fas fa-map-marked-alt text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Adresse</h4>
-							<hr class="my-2">
-							<div class="small text-black-50">80 Chemin le collenon, 42320 Cellieu</div>
-						</div>
-					</div>
-					<div class="card py-2 mb-2">
-						<div class="card-body text-center">
-							<i class="fas fa-envelope text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Email</h4>
-							<hr class="my-2">
-							<div class="small text-black-50">
-								squenault42@gmail.com
-							</div>
-						</div>
-					</div>
-					<div class="card py-2 mb-2">
-						<div class="card-body text-center">
-							<i class="fas fa-mobile-alt text-primary mb-2"></i>
-							<h4 class="text-uppercase m-0">Telephone</h4>
-							<hr class="my-2">
-							<div class="small text-black-50">06 26 56 83 95</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 mx-auto" id="contact">
-					<h4 class="text-white text-center">Contactez-moi!</h4>
-					{% for label, messages in app.flashes(['success', 'warning']) %}
-						{% for message in messages %}
-							<div class="alert-{{ label }} px-2 rounded">
-								{{ message }}
-							</div>
-						{% endfor %}
-					{% endfor %}
-					{{ form_start(form) }}
-					<div class="control-group">
-						<div class="form-group floating-label-form-group controls mb-0 pb-2">
-							<label class="text-white">Nom</label>
-							{{form_widget(form.name)}}
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="form-group floating-label-form-group controls mb-0 pb-2">
-							<label class="text-white">E-mail</label>
-							{{form_widget(form.email)}}
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="form-group floating-label-form-group controls mb-0 pb-2">
-							<label class="text-white">Telephone</label>
-							{{form_widget(form.phone)}}
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-					<div class="control-group">
-						<div class="form-group floating-label-form-group controls mb-0 pb-2">
-							<label class="text-white">Message</label>
-							{{form_widget(form.message)}}
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-					<br>
-					<div class="form-group text-center">
-						{{form_widget(form.send, { 'label': 'Envoi' })}}
-					</div>
-					{{ form_end(form) }}
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-auto">
+                    <div class="card py-2 mb-2">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Adresse</h4>
+                            <hr class="my-2">
+                            <div class="small text-black-50">80 Chemin le Collenon 42320 Cellieu</div>
+                        </div>
+                    </div>
+                    <div class="card py-2 mb-2">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-2">
+                            <div class="small text-black-50">
+                                 anim.thetime@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card py-2 mb-2">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Telephone</h4>
+                            <hr class="my-2">
+                            <div class="small text-black-50">06 26 56 83 95</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 mx-auto" id="contact">
+                    <h4 class="text-white text-center">Contactez-moi!</h4>
+                    {% for label, messages in app.flashes(['success', 'warning']) %}
+                        {% for message in messages %}
+                            <div class="alert-{{ label }} px-2 rounded">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                    {{ form_start(form) }}
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label class="text-white">Nom</label>
+                            {{form_widget(form.name)}}
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label class="text-white">E-mail</label>
+                            {{form_widget(form.email)}}
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label class="text-white">Telephone</label>
+                            {{form_widget(form.phone)}}
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                            <label class="text-white">Message</label>
+                            {{form_widget(form.message)}}
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group text-center">
+                        {{form_widget(form.send, { 'label': 'Envoi' })}}
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Tarifs</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-0"> Une pédagogie adapté à tous , dès l’âge de 6 ans (sous certaines réserves) </p>
+        <p class="mb-0"> Le premier entretien est gratuit </p>
+        <p class=""> les enfants ayant des difficultés d’apprentissage sont les bienvenus </p>
+        <h5> Par visio </h5>
+        <ul>
+            <li> Forfait de 4 cours de 30 mn : 48€ TTC </li>
+            <li> Forfait de 4 cours de 45 mn ( avec théorie) : 72€ TTC </li>
+            <li> Forfait trimestriel (12 cours) 30 mn :140€ TTC </li>
+            <li> Forfait trimestriel (12 cours avec théorie) 45 mn : 210€ TTC </li>
+        </ul>
+        <p class="mb-0">Une possibilité de se voir en présentiel est possible.</p>
+        <p >Une connexion internet correcte est nécessaire pour les cours en visioconférence afin d’avoir un suivi de qualité. </p>
+        <h5> Présentiel </h5>
+        <ul>
+            <li> Forfait de 4 cours de 45 mn : 96€ TTC </li>
+            <li> Forfait trimestriel (12 cours) : 280€ TTC </li>
+        </ul>
+        <p>Aucun cours ne peut s’effectuer sur la commune de Mornant. </p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
